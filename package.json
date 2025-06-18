@@ -1,9 +1,9 @@
 {
-  "name": "",
+  "name": "neven-landing-page",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -11,6 +11,15 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.4",
+    "swiper": "^4.1.7",
     "tailwindcss": "^4.1.10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "esbuild",
+      "sharp",
+      "swiper"
+    ]
   }
 }
