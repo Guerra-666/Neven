@@ -11,15 +11,14 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.4",
-    "swiper": "^4.1.7",
+    "swiper": "^11.2.6",
     "tailwindcss": "^4.1.10"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "@tailwindcss/oxide",
       "esbuild",
-      "sharp",
-      "swiper"
+      "sharp"
     ]
   }
 }
