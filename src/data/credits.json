@@ -1,0 +1,24 @@
+{
+  "title": "Créditos",
+  "content": "Este sitio web fue desarrollado con <a href='https://astro.build/'>Astro</a> y <a href='https://tailwindcss.com/'>Tailwind CSS</a> por <a href='https://www.neve.tech'>TechConsultora Pachuca</a>. <a href='https://github.com'>Ver el código en GitHub</a>.",
+  "list": [
+    {
+      "item": "Iconos empresariales por <a href='https://lucide.dev/'>Lucide Icons</a>"
+    },
+    {
+      "item": "Fotografías corporativas por <a href='https://unsplash.com/'>Unsplash</a>"
+    },
+    {
+      "item": "Iconos tecnológicos de <a href='https://icones.js.org/'>icones.js.org</a> por <a href='https://github.com/antfu'>@antfu</a>"
+    },
+    {
+      "item": "Carrusel de testimoniales con <a href='https://swiperjs.com/'>SwiperJS</a>"
+    },
+    {
+      "item": "Tipografía Inter por <a href='https://rsms.me/inter/'>rsms.me</a>"
+    },
+    {
+      "item": "Diseño y recursos gráficos por <a href='https://www.neve.tech'>TechConsultora Neven</a> bajo licencia <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a>"
+    }
+  ]
+}

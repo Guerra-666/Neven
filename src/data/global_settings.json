@@ -1,0 +1,56 @@
+{
+  "title": "Neven Pachuca - Soluciones Tecnológicas",
+  "description": "Consultora tecnológica B2B especializada en desarrollo web, apps móviles, sistemas ERP, IA empresarial y transformación digital para PyMEs",
+  "social_image": "/techconsultora-social.jpg",
+  "base_url": "https://www.neven.tech",
+  "demo": {
+    "title": "¿Necesitas tecnología?",
+    "content": "<strong>Agenda una consulta gratuita</strong> y descubre cómo tu empresa puede transformarse digitalmente con nuestras soluciones personalizadas.",
+    "cta": "Agendar consulta"
+  },
+  "theme_color": "#1e40af",
+  "nav": [
+    {
+      "title": "Servicios",
+      "link": "/#servicios"
+    },
+    {
+      "title": "Casos de éxito",
+      "link": "/#casos-exito"
+    },
+    {
+      "title": "Paquetes",
+      "link": "/#paquetes"
+    },
+    {
+      "title": "FAQ",
+      "link": "/#faq"
+    },
+    {
+      "title": "Contacto",
+      "link": "/#contacto"
+    }
+  ],
+  "social_links": [
+    {
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/company/"
+    },
+    {
+      "title": "WhatsApp Business",
+      "link": "https://wa.me/7713384831"
+    },
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/"
+    },
+    {
+      "title": "YouTube",
+      "link": "https://www.youtube.com/"
+    },
+    {
+      "title": "Instagram",
+      "link": "https://www.instagram.com/"
+    }
+  ]
+}

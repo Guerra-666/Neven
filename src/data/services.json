@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Creamos presencia digital que impulsa tu negocio",
+    "content": "<strong>Las empresas exitosas se construyen sobre su capacidad de adaptarse y crecer digitalmente.</strong> Desarrollamos sitios web y aplicaciones que se adaptan y prosperan sin importar hacia dónde se dirija tu mercado.",
+    "cta": "Solicitar consulta web",
+    "image": "/content-images/wall1.avif",
+    "image_alt": "Desarrollo web profesional"
+  },
+  {
+    "title": "Sistemas ERP que organizan y potencian tu empresa",
+    "content": "<strong>Expertos en digitalizar procesos empresariales complejos.</strong> Desde inventarios hasta facturación, te acompañamos en cada paso de la automatización de tu negocio.",
+    "cta": "Agendar demo de ERP",
+    "image": "/content-images/wall2.avif",
+    "image_alt": "Sistemas ERP empresariales"
+  },
+  {
+    "title": "Inteligencia Artificial que trabaja para ti",
+    "content": "<strong>Implementación de IA empresarial de vanguardia.</strong> Automatizamos tareas repetitivas, optimizamos procesos y creamos chatbots inteligentes que mejoran tu atención al cliente.",
+    "cta": "Conocer soluciones IA",
+    "image": "/content-images/wall3.avif",
+    "image_alt": "Soluciones de inteligencia artificial"
+  },
+  {
+    "title": "Aplicaciones móviles para todos los dispositivos",
+    "content": "<strong>Ayudamos a las empresas a potenciar su alcance con apps de clase mundial.</strong> Procesos de desarrollo probados que conectan tu negocio con tus clientes donde sea que estén.",
+    "cta": "Ver demo de apps",
+    "image": "/content-images/wall4.avif",
+    "image_alt": "Aplicaciones móviles empresariales"
+  }
+]

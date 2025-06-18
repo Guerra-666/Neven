@@ -1,0 +1,22 @@
+[
+  {
+    "question": "¿Qué tan segura es la información de mi empresa?",
+    "answer": "Utilizamos encriptación estándar de la industria y prácticas de almacenamiento seguro para proteger todos los datos empresariales. Todos los archivos están encriptados con AES-256, y nuestros servidores son monitoreados y actualizados regularmente para prevenir vulnerabilidades."
+  },
+  {
+    "question": "¿Ofrecen período de prueba gratuito?",
+    "answer": "Sí, ofrecemos una consulta gratuita de 2 horas donde evaluamos las necesidades tecnológicas de tu empresa y te mostramos demos en vivo de nuestras soluciones—sin compromiso y sin costo."
+  },
+  {
+    "question": "¿Pueden integrar sus sistemas con las plataformas que ya usamos?",
+    "answer": "Absolutamente. Nuestros sistemas se integran con plataformas populares como SAP, QuickBooks, WooCommerce, MercadoLibre, y la mayoría de CRM existentes. También desarrollamos APIs personalizadas según sea necesario."
+  },
+  {
+    "question": "¿Qué tipo de soporte técnico proporcionan?",
+    "answer": "Ofrecemos soporte técnico 24/7 vía WhatsApp, Teams y correo electrónico, junto con un centro de ayuda completo con tutoriales en español, mejores prácticas y guías paso a paso para cada servicio."
+  },
+  {
+    "question": "¿Trabajan con empresas fuera de Hidalgo?",
+    "answer": "Sí, aunque tenemos sede en Hidalgo, trabajamos con empresas de todo México de forma remota. Para proyectos grandes también ofrecemos visitas presenciales y capacitación en sitio."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Impulsando Crecimiento.<br>Simplificando el Éxito.",
+    "sector": "Sistema ERP",
+    "content": "<strong>Nuestra solución ERP personalizada ayudó a Manufacturas del Bajío a automatizar completamente sus procesos de inventario, ventas y facturación.</strong> <br><br>El sistema integrado optimizó los flujos de trabajo, mejoró la precisión de datos y incrementó la productividad en un 40%.",
+    "case_study_link": "https://www.manufacturasbajio.com.mx",
+    "cta": "Ver caso completo",
+    "image": "/content-images/spike.news.avif",
+    "image_alt": "Dashboard del sistema ERP implementado",
+    "bg": "bg-gradient-to-r from-indigo-500 to-purple-600"
+  },
+  {
+    "title": "Acelerando Innovación.<br>Potenciando Resultados.",
+    "sector": "Aplicación Móvil",
+    "content": "Nuestra app móvil revolucionó la gestión de ventas de campo, entregando automatización inteligente, colaboración en tiempo real y análisis predictivos de clientes.",
+    "case_study_link": "https://www.ventasmoviles.mx",
+    "cta": "Descargar app demo",
+    "image": "/content-images/pixelate.pictures.avif",
+    "image_alt": "Aplicación móvil de gestión de ventas",
+    "bg": "bg-gradient-to-r from-fuchsia-500 to-cyan-500"
+  },
+  {
+    "title": "Transformando Procesos,<br>Maximizando Eficiencia.",
+    "sector": "Inteligencia Artificial",
+    "content": "Implementamos IA conversacional que automatiza atención al cliente 24/7. Los equipos están conectados y resolviendo consultas complejas en segundos.",
+    "case_study_link": "https://www.chatbot-empresarial.mx",
+    "cta": "Probar chatbot",
+    "image": "/content-images/brighton.dog.avif",
+    "image_alt": "Interfaz del chatbot con IA implementado",
+    "bg": "bg-gradient-to-r from-pink-500 to-yellow-500"
+  }
+]
