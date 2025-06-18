@@ -1,5 +1,5 @@
 {
-  "title": "Créditos",
+  "title": "Creditos",
   "content": "Este sitio web fue desarrollado con <a href='https://astro.build/'>Astro</a> y <a href='https://tailwindcss.com/'>Tailwind CSS</a> por <a href='https://www.neve.tech'>TechConsultora Pachuca</a>. <a href='https://github.com'>Ver el código en GitHub</a>.",
   "list": [
     {

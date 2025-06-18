@@ -12,15 +12,15 @@
   "nav": [
     {
       "title": "Servicios",
-      "link": "/#servicios"
+      "link": "/#services"
     },
     {
       "title": "Casos de éxito",
-      "link": "/#casos-exito"
+      "link": "/#case-studies"
     },
     {
       "title": "Paquetes",
-      "link": "/#paquetes"
+      "link": "/#pricing"
     },
     {
       "title": "FAQ",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Contacto",
-      "link": "/#contacto"
+      "link": "/#newsletter"
     }
   ],
   "social_links": [
