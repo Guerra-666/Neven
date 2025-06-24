@@ -1,12 +1,53 @@
 {
-  "title": "Neven Pachuca - Soluciones Tecnológicas",
-  "description": "Consultora tecnológica B2B especializada en desarrollo web, apps móviles, sistemas ERP, IA empresarial y transformación digital para PyMEs",
-  "social_image": "/techconsultora-social.jpg",
+  "title": "Neven Pachuca - Consultora Tecnológica B2B | Desarrollo Web, Apps y ERP para PyMEs México",
+  "description": "Consultora tecnológica B2B especializada en transformación digital para PyMEs mexicanas. Desarrollo web, aplicaciones móviles, sistemas ERP, IA empresarial, marketing digital y soluciones tecnológicas integrales en Pachuca, Hidalgo.",
+  "social_image": "/neven-pachuca-consultora-tecnologica-og.jpg",
   "base_url": "https://www.neven.tech",
+  "company": {
+    "name": "Neven Pachuca",
+    "legal_name": "Neven Pachuca Soluciones Tecnológicas",
+    "phone": "+52-771-338-4831",
+    "email": "contacto@neven.tech",
+    "address": {
+      "street": "",
+      "city": "Pachuca de Soto",
+      "state": "Hidalgo",
+      "country": "México",
+      "postal_code": "",
+      "coordinates": {
+        "lat": 20.1011,
+        "lng": -98.7591
+      }
+    }
+  },
+  "services": [
+    "Desarrollo de sitios web dinámicos y estáticos",
+    "Aplicaciones móviles Android e iOS",
+    "Sistemas ERP empresariales",
+    "Implementación de Inteligencia Artificial",
+    "Marketing digital y SEO",
+    "Ensamble y venta de computadoras",
+    "Diseño y configuración de redes empresariales",
+    "Ensamble de servidores",
+    "Mantenimiento de equipos de cómputo",
+    "Transformación digital para PyMEs"
+  ],
+  "keywords": [
+    "consultora tecnológica México",
+    "desarrollo web PyMEs",
+    "aplicaciones móviles empresariales",
+    "sistemas ERP México",
+    "inteligencia artificial empresarial",
+    "marketing digital Pachuca",
+    "transformación digital PyMEs",
+    "redes empresariales Hidalgo",
+    "mantenimiento equipos cómputo",
+    "desarrollo software empresarial"
+  ],
   "demo": {
-    "title": "¿Necesitas tecnología?",
-    "content": "<strong>Agenda una consulta gratuita</strong> y descubre cómo tu empresa puede transformarse digitalmente con nuestras soluciones personalizadas.",
-    "cta": "Agendar consulta"
+    "title": "¿Necesitas tecnología para tu empresa?",
+    "content": "<strong>Agenda una consulta gratuita</strong> y descubre cómo tu PyME puede transformarse digitalmente con nuestras soluciones tecnológicas personalizadas. Especialistas en Pachuca, Hidalgo con cobertura nacional.",
+    "cta": "Agendar consulta gratuita"
   },
   "theme_color": "#1e40af",
   "nav": [
@@ -34,23 +75,32 @@
   "social_links": [
     {
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/company/"
+      "link": "https://www.linkedin.com/company/neven-pachuca"
     },
     {
       "title": "WhatsApp Business",
-      "link": "https://wa.me/7713384831"
+      "link": "https://wa.me/527713384831?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20consultoria%20tecnologica"
     },
     {
       "title": "Facebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/nevenpachuca"
     },
     {
       "title": "YouTube",
-      "link": "https://www.youtube.com/"
+      "link": "https://www.youtube.com/@nevenpachuca"
     },
     {
       "title": "Instagram",
-      "link": "https://www.instagram.com/"
+      "link": "https://www.instagram.com/nevenpachuca"
     }
-  ]
+  ],
+  "business_hours": {
+    "monday": "09:00-18:00",
+    "tuesday": "09:00-18:00", 
+    "wednesday": "09:00-18:00",
+    "thursday": "09:00-18:00",
+    "friday": "09:00-18:00",
+    "saturday": "Cerrado",
+    "sunday": "Cerrado"
+  }
 }

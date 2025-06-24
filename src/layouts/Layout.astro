@@ -17,59 +17,207 @@ import DialogModal from "../components/DialogModal.astro"
 import FooterMain from "../components/FooterMain.astro"
 import HeaderMain from "../components/HeaderMain.astro"
 
-const { title, description } = Astro.props
+const { title, description, keywords, ogImage, canonicalURL, type = "website", noindex = false } = Astro.props
+
+// SEO optimizado para consultora tecnológica B2B
+const seoTitle = title ?? global_settings.title
+const seoDescription = description ?? global_settings.description
+const seoKeywords = keywords ?? "consultora tecnológica México, desarrollo web PyMEs, aplicaciones móviles empresariales, sistemas ERP, inteligencia artificial empresarial, marketing digital, ensamble computadoras, redes empresariales, mantenimiento equipos cómputo, transformación digital PyMEs"
+const seoImage = ogImage ?? global_settings.social_image
+const currentURL = canonicalURL ?? Astro.url.href
+
+// Datos estructurados para Google
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "TechnologyCompany",
+  "name": "Neven Pachuca",
+  "description": "Consultora tecnológica B2B especializada en soluciones digitales para PyMEs mexicanas",
+  "url": global_settings.base_url,
+  "logo": global_settings.base_url + "/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "MX",
+    "addressRegion": "Hidalgo",
+    "addressLocality": "Pachuca"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-771-338-4831",
+    "contactType": "sales",
+    "availableLanguage": "Spanish"
+  },
+  "sameAs": global_settings.social_links.map(link => link.link),
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "MXN",
+    "availability": "https://schema.org/InStock"
+  },
+  "serviceType": [
+    "Desarrollo Web",
+    "Aplicaciones Móviles",
+    "Sistemas ERP",
+    "Inteligencia Artificial",
+    "Marketing Digital",
+    "Redes Empresariales",
+    "Mantenimiento de Equipos"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "México"
+  }
+}
 
 ---
 
-<html lang="en">
+<html lang="es">
 
   <head>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
 
-    <title>{ title ?? global_settings.title }</title>
+    <!-- SEO básico -->
+    <title>{ seoTitle }</title>
+    <meta name="description" content={ seoDescription } />
+    <meta name="keywords" content={ seoKeywords } />
+    <meta name="author" content="Neven Pachuca" />
+    <meta name="robots" content={ noindex ? "noindex, nofollow" : "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" } />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href={ currentURL } />
+
+    <!-- Favicons optimizados -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
 
-    <meta name="description" content={ description ?? global_settings.description } />
+    <!-- Theme -->
     <meta name="theme-color" content={ global_settings.theme_color } />
+    <meta name="msapplication-TileColor" content={ global_settings.theme_color } />
 
-    <meta property="og:title" content={ title ?? global_settings.title } />
-    <meta property="og:description" content={ description ?? global_settings.description } />
-    <meta
-      property="og:image"
-      content={ global_settings.base_url + global_settings.social_image }
-    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={ type } />
+    <meta property="og:title" content={ seoTitle } />
+    <meta property="og:description" content={ seoDescription } />
+    <meta property="og:image" content={ global_settings.base_url + seoImage } />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content={ currentURL } />
+    <meta property="og:site_name" content="Neven Pachuca" />
+    <meta property="og:locale" content="es_MX" />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ seoTitle } />
+    <meta name="twitter:description" content={ seoDescription } />
+    <meta name="twitter:image" content={ global_settings.base_url + seoImage } />
+
+    <!-- Geo targeting -->
+    <meta name="geo.region" content="MX-HID" />
+    <meta name="geo.placename" content="Pachuca de Soto" />
+    <meta name="geo.position" content="20.1011;-98.7591" />
+    <meta name="ICBM" content="20.1011, -98.7591" />
+
+    <!-- Datos estructurados -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
+    <!-- Preconnect para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+    <!-- Fuentes optimizadas -->
     <Font cssVariable="--font-inter" preload />
     <Font cssVariable="--font-inter-display" preload />
+
+    <!-- Alternativas de idioma en inglés -->
+    <!-- <link rel="alternate" hreflang="es" href={ currentURL } /> -->
+    <!-- <link rel="alternate" hreflang="en" href={ currentURL.replace('/es/', '/en/') } /> -->
+
+    <!-- Verificaciones de buscadores (agregar cuando se tengan las propiedades) -->
+    <!-- <meta name="google-site-verification" content="tu-codigo-de-verificacion" /> -->
+    <!-- <meta name="msvalidate.01" content="tu-codigo-bing" /> -->
 
   </head>
 
   <body id="top">
 
-    <!-- Skip link -->
-    <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 transition-all duration-300" href="#main">Skip to content</a>
+    <!-- Skip link para accesibilidad -->
+    <a class="fixed -top-20 focus-visible:top-0 p-3 bg-black/90 text-white transition-all duration-300 z-50" href="#main">
+      Saltar al contenido principal
+    </a>
 
-    <!-- bg image -->
-    <Image src={ bg_image } alt="" format="avif" height={1080} width={1920} class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" loading="eager" />
+    <!-- Imagen de fondo optimizada -->
+    <Image 
+      src={ bg_image } 
+      alt="Oficinas de consultoría tecnológica Neven Pachuca" 
+      format="avif" 
+      height={1080} 
+      width={1920} 
+      class="absolute min-h-svh object-cover inset-0 bottom-auto -z-1 w-full h-auto opacity-20 mask-b-from-50%" 
+      loading="eager"
+      decoding="async"
+    />
 
-    <!-- Header -->
+    <!-- Header con navegación semántica -->
     <HeaderMain settings={ global_settings } />
 
-    <!-- Main slot -->
-    <main id="main">
+    <!-- Contenido principal -->
+    <main id="main" role="main">
       <slot />
     </main>
 
     <!-- Footer -->
     <FooterMain settings={ global_settings } />
 
-    <!-- Demo dialog modal -->
-    <DialogModal id="demo" content={ global_settings.demo }>
+    <!-- Modal de demostración -->
+    <DialogModal id="demo" content={ global_settings.demo } />
+
+    <!-- Schema markup adicional para servicios locales -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Neven Pachuca - Soluciones Tecnológicas",
+      "image": "{ global_settings.base_url }/logo.png",
+      "telephone": "+52-771-338-4831",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Pachuca de Soto",
+        "addressRegion": "Hidalgo",
+        "postalCode": "",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.1011,
+        "longitude": -98.7591
+      },
+      "url": "{ global_settings.base_url }",
+      "sameAs": [
+        "{ global_settings.social_links.find(link => link.title === 'LinkedIn')?.link }",
+        "{ global_settings.social_links.find(link => link.title === 'Facebook')?.link }",
+        "{ global_settings.social_links.find(link => link.title === 'Instagram')?.link }"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$15,999 - $199,999 MXN"
+    }
+    </script>
 
   </body>
 </html>
-

@@ -6,6 +6,11 @@ import CubeOutline from '../assets/theme-images/icon-cube-outline.svg'
 
 const { title, pricing } = Astro.props
 
+// Función para formatear precio como moneda
+const formatPrice = (price) => {
+  return new Intl.NumberFormat('es-MX').format(price)
+}
+
 ---
 
 <section class="bs-container bs-mt-lg" id="pricing">
@@ -69,7 +74,7 @@ const { title, pricing } = Astro.props
         <footer class="flex justify-between items-center gap-2">
 
           <!-- Price -->
-          <span class="text-4xl lg:text-5xl">${ item.price }<span class="text-2xl hidden @md:inline-block -translate-y-1 ms-2"> / mes</span></span>
+          <span class="text-4xl lg:text-5xl">${ formatPrice(item.price) }<span class="text-2xl hidden @md:inline-block -translate-y-1 ms-2"> / mes</span></span>
 
           <!-- CTA button -->
           <button type="button" class="bs-btn inline-block self-start @4xl:mt-12 text-xl" onclick="demo.showModal()">
@@ -86,4 +91,3 @@ const { title, pricing } = Astro.props
   </div>
 
 </section>
-
