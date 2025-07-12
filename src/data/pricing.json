@@ -2,65 +2,60 @@
   {
     "title": "Paquete Esencial",
     "tag": "Más popular",
-    "content": "Digitalización básica para PyMEs",
-    "cta": "Iniciar proyecto",
-    "price": 15999,
+    "content": "Digitalización fundamental para PyMEs, estableciendo una presencia digital sólida y soporte técnico básico.",
+    "cta": "Iniciar Proyecto",
+    "price": 24999,
     "services": [
-      { "item": "Sitio web estático responsive (5 páginas)" },
-      { "item": "Configuración de correo empresarial" },
-      { "item": "Mantenimiento básico de equipos (2 visitas/mes)" },
-      { "item": "Consultoría inicial de digitalización" },
-      { "item": "Soporte técnico vía WhatsApp/Teams" }
+      { "item": "Diseño y desarrollo de sitio web estático responsive (hasta 5 secciones)." },
+      { "item": "Configuración de hasta 5 cuentas de correo empresarial con dominio propio (Google Workspace Básico o Microsoft 365 Business Basic, licencias no incluidas)." },
+      { "item": "Consultoría inicial de digitalización (sesión de 4 horas) para identificación de necesidades y plan de acción." },
+      { "item": "Soporte técnico remoto vía WhatsApp/Teams/AnyDesk (Lun-Vie 9:00-18:00 hrs). Tiempo de respuesta máximo de 4 horas hábiles." }
     ]
   },
   {
     "title": "Paquete Profesional",
     "tag": "Recomendado",
-    "content": "Solución integral para empresas en crecimiento",
-    "cta": "Solicitar cotización",
-    "price": 35999,
+    "content": "Solución integral para empresas en crecimiento que buscan optimizar procesos y expandir su presencia digital.",
+    "cta": "Solicitar Cotización Personalizada",
+    "price": 69999,
     "services": [
-      { "item": "Todo lo del Paquete Esencial" },
-      { "item": "Sitio web dinámico con CMS y base de datos" },
-      { "item": "Aplicación móvil básica (Android o iOS)" },
-      { "item": "Sistema ERP básico (inventarios + ventas)" },
-      { "item": "Diseño de red empresarial (hasta 20 equipos)" },
-      { "item": "Marketing digital básico (redes sociales + SEO)" }
+      { "item": "Todo lo del Paquete Esencial." },
+      { "item": "Diseño y desarrollo de sitio web dinámico con CMS (Strapi) y base de datos (hasta 5 secciones y funcionalidades interactivas básicas)." },
+      { "item": "Implementación y configuración de sistema ERP Odoo básico para módulo de inventario y ventas. Capacitación para 2 usuarios." },
+      { "item": "Diseño de red empresarial segura para hasta 20 dispositivos. Incluye topología y recomendaciones de hardware (instalación física no incluida)." },
+      { "item": "Marketing digital inicial: configuración de perfiles en 2 redes sociales y estrategia SEO básica (investigación de palabras clave, optimización on-page para 2 secciones)." }
     ]
   },
   {
     "title": "Paquete Enterprise",
     "tag": "Mejor valor",
-    "content": "Transformación digital completa",
-    "cta": "Agendar consulta",
-    "price": 89999,
+    "content": "Transformación digital completa con soluciones avanzadas y soporte continuo para operaciones a gran escala.",
+    "cta": "Agendar Consulta Estratégica",
+    "price": 189999,
     "services": [
-      { "item": "Todo lo del Paquete Profesional" },
-      { "item": "Aplicación móvil completa (Android + iOS)" },
-      { "item": "Sistema ERP avanzado (módulos completos)" },
-      { "item": "Implementación de IA empresarial personalizada" },
-      { "item": "Servidor dedicado configurado" },
-      { "item": "Infraestructura de red completa (hasta 50 equipos)" },
-      { "item": "Marketing digital avanzado + automatización" },
-      { "item": "Soporte técnico 24/7 y mantenimiento preventivo" }
+      { "item": "Todo lo del Paquete Profesional." },
+      { "item": "Implementación y personalización de sistema ERP avanzado (ej. Odoo Enterprise, licencias no incluidas) con módulos completos: inventario, ventas, compras, contabilidad básica, CRM, RRHH. Capacitación para 5 usuarios" },
+      { "item": "Implementación de solución de IA personalizada para un proceso específico (chatbot, sistema de recomendación, análisis de datos)." },
+      { "item": "Configuración y hardening de servidor dedicado (costo del servidor no incluido), incluyendo SO, seguridad y backups automatizados." },
+      { "item": "Diseño, configuración e implementación de infraestructura de red robusta para hasta 30 dispositivos, incluyendo segmentación, VLANs y firewalls (hardware no incluido)." },
+      { "item": "Marketing digital avanzado y automatización: SEO avanzado y email marketing con automatizaciones." }
     ]
   },
   {
     "title": "Paquete Premium",
     "tag": "Solución completa",
-    "content": "Ecosistema tecnológico empresarial",
-    "cta": "Contactar especialista",
-    "price": 199999,
+    "content": "Transformación digital integral y gestión continua de un ecosistema tecnológico escalable y a medida para empresas líderes.",
+    "cta": "Contactar a un Especialista Senior",
+    "price": 399999,
     "services": [
-      { "item": "Todo lo del Paquete Enterprise" },
-      { "item": "Múltiples aplicaciones móviles personalizadas" },
-      { "item": "Sistema ERP completamente customizado" },
-      { "item": "Suite completa de IA (chatbots, análisis, automatización)" },
-      { "item": "Infraestructura de servidores redundante" },
-      { "item": "Red empresarial escalable (equipos ilimitados)" },
-      { "item": "Estrategia de marketing digital omnicanal" },
-      { "item": "Consultoría tecnológica mensual personalizada" },
-      { "item": "SLA garantizado con respuesta inmediata" }
+      { "item": "Todo lo del Paquete Enterprise." },
+      { "item": "Desarrollo o adaptación profunda de sistema ERP completamente customizado a los flujos de trabajo únicos de la empresa, con soporte post-implementación extendido." },
+      { "item": "Implementación de IA: chatbots avanzados, análisis predictivo, automatizacion de procesos." },
+      { "item": "Diseño, implementación y gestión de infraestructura de servidores redundante." },
+      { "item": "Diseño e implementación de arquitectura de red empresarial, escalable para 50 dispositivos, con seguridad avanzada (ej. SentinelOne, TrendMicro." },
+      { "item": "Estrategia de marketing digital omnicanal: abarcando todos los puntos de contacto, optimización UX/UI, análisis de datos avanzados." },
+      { "item": "Consultoría tecnológica mensual personalizada." },
+      { "item": "Acuerdo de Nivel de Servicio (SLA) garantizado con respuesta inmediata (menos de 30 minutos para críticos) y disponibilidad de ingenieros dedicados 24/7/365." }
     ]
   }
 ]
