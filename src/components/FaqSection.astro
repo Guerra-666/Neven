@@ -12,7 +12,7 @@ const { title, faq } = Astro.props
   { title && <h2 class="bs-h2 text-center md:text-left" set:html={ title } />}
 
   <!-- FAQ -->
-  <div class="grid gap-2 bs-mt-sm">
+  <div class="grid gap-2 bs-mt-sm [&_summary]:font-semibold [&_summary]:text-lg [&_div]:font-normal [&_div]:text-base [&_div]:text-opacity-80">
 
     <!-- Item -->
     { faq.map( item =>
