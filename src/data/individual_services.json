@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Sitio web estático",
+    "description": "Desarrollo de sitio web corporativo básico con 5 páginas, adaptable a dispositivos móviles",
+    "features": [
+      "Hosting, Dominio y Certificado SSL gratuito por 12 meses",
+      "5 páginas estáticas (Inicio, Nosotros, Servicios, Portafolio, Contacto)",
+      "Diseño responsive",
+      "Optimización SEO básica (meta tags y estructura)",
+      "Formulario de contacto con validación"
+    ],
+    "type": "fijo",
+    "price": 4500,
+    "badge": "Popular"
+  },
+  {
+    "name": "Mantenimiento web básico",
+    "description": "Paquete esencial de mantenimiento anual para sitios estáticos",
+    "features": [
+      "Actualizaciones de seguridad mensuales",
+      "Respaldos semanales automatizados",
+      "Soporte técnico básico (hasta 2 horas/mes)",
+      "Reporte trimestral de desempeño"
+    ],
+    "type": "fijo",
+    "price": 2500,
+    "badge": null
+  },
+  {
+    "name": "Equipos a medida",
+    "description": "Computadoras ensambladas personalizadas para fines específicos con componentes de calidad",
+    "features": [
+      "Configuración según necesidades (gaming, diseño, servidores, etc.)",
+      "Ensamblaje profesional y cableado organizado",
+      "Pruebas de estrés y estabilidad",
+      "Garantía por componentes y mano de obra",
+      "Soporte técnico post-venta (30 días)"
+    ],
+    "type": "fijo",
+    "badge": "Nuevo"
+    },
+  {
+    "name": "Tienda online básica",
+    "description": "E-commerce esencial con hasta 50 productos y pasarela de pagos integrada",
+    "features": [
+      "Hasta 50 productos con categorías básicas",
+      "Carrito de compras funcional",
+      "Integración con PayPal/Stripe",
+      "Panel de administración de productos",
+      "Certificado SSL Gratuito por 1 año"
+    ],
+    "type": "rango",
+    "priceFrom": 15000,
+    "priceTo": 35000,
+    "badge": null
+  },
+  {
+    "name": "Aplicación móvil básica",
+    "description": "App nativa para una plataforma (Android o iOS) con funcionalidades esenciales",
+    "features": [
+      "Desarrollo para una plataforma (elegir)",
+      "Hasta 5 pantallas principales",
+      "Integración con 1 API externa",
+      "Publicación en tienda de aplicaciones",
+      "Soporte post-lanzamiento (30 días)"
+    ],
+    "type": "rango",
+    "priceFrom": 25000,
+    "priceTo": 75000,
+    "badge": null
+  },
+  {
+    "name": "Sistema ERP básico",
+    "description": "Módulo esencial de gestión para PYMES (1 módulo principal)",
+    "features": [
+      "Gestión de inventario simple",
+      "Registro de ventas básico",
+      "Administración de clientes",
+      "Reportes estándar (PDF/Excel)",
+      "Capacitación inicial (4 horas)"
+    ],
+    "type": "rango",
+    "priceFrom": 20000,
+    "priceTo": 45000,
+    "badge": null
+  },
+  {
+    "name": "Chatbot con IA básico",
+    "description": "Asistente virtual para canales digitales con flujos predefinidos",
+    "features": [
+      "Hasta 50 intenciones de usuario configuradas",
+      "Integración con 1 canal (Web o WhatsApp)",
+      "Base de conocimiento con 100 preguntas",
+      "Panel de análisis básico",
+      "Configuración inicial incluida"
+    ],
+    "type": "alternativo",
+    "price": 18000,
+    "priceAlt": "$3,500/mes (soporte y actualizaciones)",
+    "badge": "Popular"
+  },
+  {
+    "name": "Consultoría IT inicial",
+    "description": "Diagnóstico tecnológico con plan de acción para PYMES",
+    "features": [
+      "Auditoría de infraestructura (8 horas)",
+      "Reporte de brechas tecnológicas",
+      "Plan de implementación priorizado",
+      "2 sesiones de seguimiento",
+      "Documentación técnica completa"
+    ],
+    "type": "fijo",
+    "price": 5500,
+    "badge": null
+  },
+  {
+    "name": "Automatización básica",
+    "description": "Digitalización de 1 proceso empresarial con herramientas estándar",
+    "features": [
+      "Análisis de 1 flujo de trabajo",
+      "Automatización con herramientas no-code",
+      "Integración con 1 sistema existente",
+      "Capacitación operativa (3 horas)",
+      "Soporte técnico por 3 meses"
+    ],
+    "type": "rango",
+    "priceFrom": 15000,
+    "priceTo": 40000,
+    "badge": "En desarrollo"
+  }
+  
+]

@@ -1,0 +1,227 @@
+---
+
+const { title, subtitle, minPrice, individualServices, ctaText } = Astro.props
+
+// Función para formatear precio como moneda
+const formatPrice = (price) => {
+  return new Intl.NumberFormat('es-MX').format(price)
+}
+
+// Función para procesar descripción y extraer notas
+const processDescription = (description) => {
+  if (!description) return { text: '', notes: [] }
+  
+  const notes = []
+  let processedText = description
+  
+  // Buscar contenido entre paréntesis
+  const matches = description.match(/\([^)]+\)/g)
+  
+  if (matches) {
+    matches.forEach((match, index) => {
+      const noteIndex = notes.length + 1
+      const noteText = match.slice(1, -1) // Remover paréntesis
+      
+      processedText = processedText.replace(match, `*${noteIndex}`)
+      notes.push({
+        index: noteIndex,
+        text: noteText
+      })
+    })
+  }
+  
+  return { text: processedText, notes }
+}
+
+---
+
+<section class="bs-container bs-mt-lg" id="individual-services">
+
+  <!-- Header -->
+  <div class="text-center mb-12">
+    { title && <h3 class="text-3xl font-bold mb-4">{ title }</h3> }
+    { subtitle && minPrice && (
+      <p class="text-xl text-opacity-70">{ subtitle } ${ formatPrice(minPrice) } MXN</p>
+    )}
+  </div>
+  
+  <!-- Services Grid -->
+  { individualServices && individualServices.length > 0 && (
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6" id="services-grid">
+      { individualServices.map((service, index) => {
+        const { text: descriptionText, notes } = processDescription(service.description)
+        
+        return (
+          <div class:list={[
+            'bg-bs-surface-0/50 rounded-xl p-6 border border-bs-foreground-dark/20 hover:bg-bs-surface-0/70 transition-all duration-500 group min-h-[280px] flex flex-col service-card',
+            index >= 3 ? 'service-card-hidden' : 'service-card-visible'
+          ]} style={index >= 3 ? '--delay: ' + (index - 3) * 100 + 'ms' : ''}>
+            
+            <!-- Header -->
+            <div class="flex justify-between items-start mb-4">
+              <h4 class="font-semibold text-lg leading-tight group-hover:text-opacity-90 transition-colors">
+                {service.name}
+              </h4>
+              { service.badge && (
+                <span class:list={[
+                  'text-sm px-3 py-1 rounded-full ml-3 flex-shrink-0',
+                  service.badge === 'En desarrollo' ? 'bg-orange-500/20 text-orange-300' : 'bg-blue-500/20 text-blue-300'
+                ]}>
+                  {service.badge}
+                </span>
+              )}
+            </div>
+            
+            <!-- Description -->
+            { service.description && (
+              <div class="mb-6">
+                <p class="text-sm text-opacity-70 leading-relaxed">
+                  {descriptionText}
+                </p>
+                
+                <!-- Notes -->
+                { notes.length > 0 && (
+                  <div class="mt-3 pt-3 border-t border-current/10">
+                    { notes.map((note) => (
+                      <p class="text-sm text-opacity-60 leading-relaxed">
+                        <span class="font-medium">*{note.index}</span> {note.text}
+                      </p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+            
+            <!-- Features -->
+            { service.features && service.features.length > 0 && (
+              <div class="mb-6 flex-grow">
+                <ul class="space-y-2">
+                  { service.features.map((feature) => (
+                    <li class="text-sm text-opacity-80 flex items-start">
+                      <span class="text-green-400 mr-2 flex-shrink-0 text-base">•</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </div>
+  )}
+  
+  <!-- Toggle Button -->
+  { individualServices && individualServices.length > 3 && (
+    <div class="text-center">
+      <button type="button" id="toggle-services" class="bs-btn inline-block text-base px-6 py-3 whitespace-nowrap">
+        <span class="inline-flex items-center">
+          Ver todos los servicios
+          <svg class="ml-2 w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </span>
+      </button>
+    </div>
+  )}
+
+</section>
+
+<style>
+  .service-card-hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    height: 0;
+    min-height: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: var(--delay, 0ms);
+  }
+  
+  .service-card-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    height: auto;
+    min-height: 280px;
+    margin-bottom: 1.5rem;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: var(--delay, 0ms);
+  }
+  
+  .service-card-expanding {
+    animation: expandCard 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  .service-card-collapsing {
+    animation: collapseCard 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  
+  @keyframes expandCard {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      height: 0;
+      min-height: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      height: auto;
+      min-height: 280px;
+    }
+  }
+  
+  @keyframes collapseCard {
+    from {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      height: auto;
+      min-height: 280px;
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      height: 0;
+      min-height: 0;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggle-services');
+    const serviceCards = document.querySelectorAll('.service-card');
+    const toggleIcon = toggleButton?.querySelector('svg');
+    let isExpanded = false;
+
+    if (toggleButton) {
+      toggleButton.addEventListener('click', function() {
+        isExpanded = !isExpanded;
+        
+        serviceCards.forEach((card, index) => {
+          if (index >= 3) {
+            if (isExpanded) {
+              card.classList.remove('service-card-hidden');
+              card.classList.add('service-card-visible');
+            } else {
+              card.classList.remove('service-card-visible');
+              card.classList.add('service-card-hidden');
+            }
+          }
+        });
+        
+        // Update button text and icon
+        const buttonText = toggleButton.querySelector('span');
+        if (buttonText) {
+          buttonText.firstChild.textContent = isExpanded ? 'Ver menos servicios' : 'Ver todos los servicios';
+        }
+        
+        // Rotate icon
+        if (toggleIcon) {
+          toggleIcon.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+      });
+    }
+  });
+</script>

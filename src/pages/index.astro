@@ -11,6 +11,7 @@ import NewsletterSection from "../components/NewsletterSection.astro"
 import PricingSection from "../components/PricingSection.astro"
 import QuoteSection from "../components/QuoteSection.astro"
 import TestimonialsSection from "../components/TestimonialsSection.astro"
+import PricingIndividual from "../components/PricingIndividual.astro"
 
 import caseStudies from "../data/case_studies.json"
 import clients from "../data/clients.json"
@@ -21,6 +22,7 @@ import pricing from "../data/pricing.json"
 import global_settings from "../data/global_settings.json"
 import newsletter from "../data/newsletter.json"
 import testimonials from "../data/testimonials.json"
+import individualServices from "../data/individual_services.json"
 
 ---
 
@@ -30,20 +32,31 @@ import testimonials from "../data/testimonials.json"
     content={ home.hero_content }
     settings={ global_settings }
     title={ home.hero_title }
-  />
 
-  <ServicesCarousel
+  />
+  <PricingSection
+  pricing={ pricing }
+  title={ home.pricing_title }
+  />
+  <PricingIndividual
+    title={ home.pricing_individual_title }
+    subtitle={ home.pricing_individual_subtitle }
+    minPrice={ home.pricing_individual_min_price }
+    individualServices={ individualServices }
+    ctaText={ home.pricing_individual_cta }
+  />
+  <!-- <ServicesCarousel
     services={ services }
     title={ home.services_title }
-  />
+  /> -->
+  
+  <!-- Se comenta seccion hasta que se tenga contenido de clientes
   <ClientsSection
   clients={ clients }
   title={ home.clients_title }
   />
-  
-  <!-- Se comenta seccion hasta que se tenga contenido de clientes
   <QuoteSection
-    cite={ home.quote_cite }
+  cite={ home.quote_cite }
     content={ home.quote_content }
     image={ home.quote_image }
     role={ home.quote_role }
@@ -58,17 +71,11 @@ import testimonials from "../data/testimonials.json"
     testimonials={ testimonials }
     title={ home.testimonials_title }
   /> -->
-
-  <PricingSection
-    pricing={ pricing }
-    title={ home.pricing_title }
-  />
-
   <FaqSection
     faq={ faq }
     title={ home.faq_title }
   />
 
-  <NewsletterSection newsletter={newsletter} />
+  <!-- <NewsletterSection newsletter={newsletter} /> -->
 
 </Layout>

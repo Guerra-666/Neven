@@ -2,60 +2,62 @@
   {
     "title": "Paquete Esencial",
     "tag": "Más popular",
-    "content": "Digitalización fundamental para PyMEs, estableciendo una presencia digital sólida y soporte técnico básico.",
+    "content": "Presencia digital básica para PyMEs con soporte técnico fundamental",
     "cta": "Iniciar Proyecto",
     "price": 24999,
     "services": [
-      { "item": "Diseño y desarrollo de sitio web estático responsive (hasta 5 secciones)." },
-      { "item": "Configuración de hasta 5 cuentas de correo empresarial con dominio propio (Google Workspace Básico o Microsoft 365 Business Basic, licencias no incluidas)." },
-      { "item": "Consultoría inicial de digitalización (sesión de 4 horas) para identificación de necesidades y plan de acción." },
-      { "item": "Soporte técnico remoto vía WhatsApp/Teams/AnyDesk (Lun-Vie 9:00-18:00 hrs). Tiempo de respuesta máximo de 4 horas hábiles." }
+      { "item": "Sitio web estático (5 páginas/secciones, diseño responsive)" },
+      { "item": "Configuración de dominio y 3 cuentas de correo empresarial" },
+      { "item": "Consultoría IT inicial (4 horas) para diagnóstico tecnológico" },
+      { "item": "Certificado SSL, Dominio y Hosting básico por 12 meses" },
+      { "item": "Soporte técnico remoto (Lun-Vie 9:00-18:00, respuesta en 4 horas hábiles)" }
     ]
   },
   {
     "title": "Paquete Profesional",
     "tag": "Recomendado",
-    "content": "Solución integral para empresas en crecimiento que buscan optimizar procesos y expandir su presencia digital.",
-    "cta": "Solicitar Cotización Personalizada",
+    "content": "Solución integral para empresas en crecimiento con necesidades de e-commerce",
+    "cta": "Solicitar Cotización",
     "price": 69999,
     "services": [
-      { "item": "Todo lo del Paquete Esencial." },
-      { "item": "Diseño y desarrollo de sitio web dinámico con CMS (Strapi) y base de datos (hasta 5 secciones y funcionalidades interactivas básicas)." },
-      { "item": "Implementación y configuración de sistema ERP Odoo básico para módulo de inventario y ventas. Capacitación para 2 usuarios." },
-      { "item": "Diseño de red empresarial segura para hasta 20 dispositivos. Incluye topología y recomendaciones de hardware (instalación física no incluida)." },
-      { "item": "Marketing digital inicial: configuración de perfiles en 2 redes sociales y estrategia SEO básica (investigación de palabras clave, optimización on-page para 2 secciones)." }
+      { "item": "Todo lo del Paquete Esencial" },
+      { "item": "Tienda online básica (hasta 50 productos con panel administrativo)" },
+      { "item": "Integración con pasarela de pagos (PayPal/Stripe)" },
+      { "item": "Sistema ERP básico (1 módulo: inventario o ventas)" },
+      { "item": "Capacitación para 2 usuarios (4 horas)" },
+      { "item": "Mantenimiento web básico por 12 meses" }
     ]
   },
   {
     "title": "Paquete Enterprise",
     "tag": "Mejor valor",
-    "content": "Transformación digital completa con soluciones avanzadas y soporte continuo para operaciones a gran escala.",
-    "cta": "Agendar Consulta Estratégica",
+    "content": "Transformación digital completa con automatización y soluciones móviles",
+    "cta": "Agendar Consulta",
     "price": 189999,
     "services": [
-      { "item": "Todo lo del Paquete Profesional." },
-      { "item": "Implementación y personalización de sistema ERP avanzado (ej. Odoo Enterprise, licencias no incluidas) con módulos completos: inventario, ventas, compras, contabilidad básica, CRM, RRHH. Capacitación para 5 usuarios" },
-      { "item": "Implementación de solución de IA personalizada para un proceso específico (chatbot, sistema de recomendación, análisis de datos)." },
-      { "item": "Configuración y hardening de servidor dedicado (costo del servidor no incluido), incluyendo SO, seguridad y backups automatizados." },
-      { "item": "Diseño, configuración e implementación de infraestructura de red robusta para hasta 30 dispositivos, incluyendo segmentación, VLANs y firewalls (hardware no incluido)." },
-      { "item": "Marketing digital avanzado y automatización: SEO avanzado y email marketing con automatizaciones." }
+      { "item": "Todo lo del Paquete Profesional" },
+      { "item": "Aplicación móvil básica (1 plataforma: iOS o Android)" },
+      { "item": "Chatbot con IA básico (hasta 50 intenciones)" },
+      { "item": "Automatización de 1 proceso empresarial" },
+      { "item": "ERP extendido (2 módulos: inventario + ventas)" },
+      { "item": "Soporte técnico prioritario (respuesta en 2 horas)" },
+      { "item": "Mantenimiento premium por 12 meses" }
     ]
   },
   {
     "title": "Paquete Premium",
     "tag": "Solución completa",
-    "content": "Transformación digital integral y gestión continua de un ecosistema tecnológico escalable y a medida para empresas líderes.",
-    "cta": "Contactar a un Especialista Senior",
+    "content": "Ecosistema tecnológico integral con soporte avanzado para operaciones complejas",
+    "cta": "Contactar a un Especialista",
     "price": 399999,
     "services": [
-      { "item": "Todo lo del Paquete Enterprise." },
-      { "item": "Desarrollo o adaptación profunda de sistema ERP completamente customizado a los flujos de trabajo únicos de la empresa, con soporte post-implementación extendido." },
-      { "item": "Implementación de IA: chatbots avanzados, análisis predictivo, automatizacion de procesos." },
-      { "item": "Diseño, implementación y gestión de infraestructura de servidores redundante." },
-      { "item": "Diseño e implementación de arquitectura de red empresarial, escalable para 50 dispositivos, con seguridad avanzada (ej. SentinelOne, TrendMicro." },
-      { "item": "Estrategia de marketing digital omnicanal: abarcando todos los puntos de contacto, optimización UX/UI, análisis de datos avanzados." },
-      { "item": "Consultoría tecnológica mensual personalizada." },
-      { "item": "Acuerdo de Nivel de Servicio (SLA) garantizado con respuesta inmediata (menos de 30 minutos para críticos) y disponibilidad de ingenieros dedicados 24/7/365." }
+      { "item": "Todo lo del Paquete Enterprise" },
+      { "item": "Sistema ERP personalizado (3+ módulos con adaptación profunda)" },
+      { "item": "Aplicación móvil avanzada (2 plataformas + integraciones complejas)" },
+      { "item": "Chatbot IA avanzado con NLP y análisis predictivo" },
+      { "item": "Automatización de 3+ procesos empresariales" },
+      { "item": "Diseño de infraestructura de red segura (hasta 30 dispositivos)" },
+      { "item": "Consultoría tecnológica mensual (8h/mes)" }
     ]
   }
 ]

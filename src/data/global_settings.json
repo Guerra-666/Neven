@@ -2,12 +2,12 @@
   "title": "Neven Pachuca - Consultora Tecnológica B2B | Desarrollo Web, Apps y ERP para PyMEs México",
   "description": "Consultora tecnológica B2B especializada en transformación digital para PyMEs mexicanas. Desarrollo web, aplicaciones móviles, sistemas ERP, IA empresarial, marketing digital y soluciones tecnológicas integrales en Pachuca, Hidalgo.",
   "social_image": "/neven-pachuca-consultora-tecnologica-og.jpg",
-  "base_url": "https://www.neven.tech",
+  "base_url": "https://www.theneven.tech",
   "company": {
     "name": "Neven Pachuca",
     "legal_name": "Neven Pachuca Soluciones Tecnológicas",
-    "phone": "+52-771-338-4831",
-    "email": "contacto@neven.tech",
+    "phone": "+52-771-165-0216",
+    "email": "theneventech@gmail.com",
     "address": {
       "street": "",
       "city": "Pachuca de Soto",
@@ -45,19 +45,15 @@
     "desarrollo software empresarial"
   ],
   "demo": {
-    "title": "¿Necesitas tecnología para tu empresa?",
+    "title": "¿Quieres transformar tu negocio?",
     "content": "<strong>Agenda una consulta gratuita</strong> y descubre cómo tu PyME puede transformarse digitalmente con nuestras soluciones tecnológicas personalizadas. Especialistas en Pachuca, Hidalgo con cobertura nacional.",
     "cta": "Agendar consulta gratuita"
   },
-  "theme_color": "#1e40af",
+  "theme_color": "#18181b",
   "nav": [
     {
       "title": "Servicios",
       "link": "/#services"
-    },
-    {
-      "title": "Casos de éxito",
-      "link": "/#case-studies"
     },
     {
       "title": "Paquetes",
@@ -70,6 +66,10 @@
     {
       "title": "Contacto",
       "link": "/#newsletter"
+    },
+    {
+      "title": "Sobre nosotros",
+      "link": "/about"
     }
   ],
   "social_links": [
@@ -79,7 +79,7 @@
     },
     {
       "title": "WhatsApp Business",
-      "link": "https://wa.me/527713384831?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20consultoria%20tecnologica"
+      "link": "https://wa.me/7711650216?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20consultoria%20tecnologica"
     },
     {
       "title": "Facebook",
@@ -87,7 +87,7 @@
     },
     {
       "title": "YouTube",
-      "link": "https://www.youtube.com/@nevenpachuca"
+      "link": "https://www.youtube.com/@neventech"
     },
     {
       "title": "Instagram",

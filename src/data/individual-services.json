@@ -1,0 +1,122 @@
+{
+  "title": "Servicios individuales",
+  "subtitle": "Precios desde",
+  "minPrice": 3000,
+  "ctaText": "Cotizar Servicio Individual",
+  "individualServices": [
+    {
+      "name": "Landing Page",
+      "description": "Página web de presentación profesional, optimizada para conversión y completamente responsive.",
+      "type": "fijo",
+      "price": 4500,
+      "features": [
+        "Diseño responsive",
+        "Optimización SEO básica",
+        "Formulario de contacto",
+        "Integración con redes sociales",
+        "Hosting incluido por 1 año"
+      ]
+    },
+    {
+      "name": "E-commerce Básico",
+      "description": "Tienda online completa con carrito de compras, pasarela de pagos y gestión de productos.",
+      "type": "fijo",
+      "price": 12000,
+      "features": [
+        "Hasta 50 productos",
+        "Carrito de compras",
+        "Pasarela de pagos",
+        "Panel de administración",
+        "Diseño responsive",
+        "SSL incluido"
+      ]
+    },
+    {
+      "name": "E-commerce + CMS + Inventario",
+      "description": "Solución completa con Odoo integrado para gestión de inventario, ventas y contenido.",
+      "type": "fijo",
+      "price": 24000,
+      "features": [
+        "Todo del E-commerce Básico",
+        "Sistema de inventario Odoo",
+        "Gestión de contenido (CMS)",
+        "Reportes de ventas",
+        "Sincronización automática",
+        "Capacitación incluida"
+      ]
+    },
+    {
+      "name": "Consultoría en TI",
+      "description": "Asesoramiento especializado en tecnología, digitalización y optimización de procesos empresariales.",
+      "type": "alternativo",
+      "price": 30000,
+      "priceAlt": "$200 por hora",
+      "features": [
+        "Análisis de necesidades",
+        "Plan de digitalización",
+        "Recomendaciones técnicas",
+        "Seguimiento del proyecto",
+        "Documentación completa"
+      ]
+    },
+    {
+      "name": "ERP Odoo Online",
+      "description": "Sistema ERP completo para pequeñas empresas (licencias de Odoo no incluidas).",
+      "type": "fijo",
+      "price": 20000,
+      "features": [
+        "Configuración para 1-5 empleados",
+        "Módulos: Ventas, Inventario, Contabilidad",
+        "Capacitación para usuarios",
+        "Migración de datos básica",
+        "Soporte por 3 meses"
+      ]
+    },
+    {
+      "name": "Equipo de Cómputo Personalizado",
+      "description": "Ensamblaje y configuración de equipos de cómputo según necesidades específicas.",
+      "type": "rango",
+      "priceFrom": 2000,
+      "priceTo": 30000,
+      "features": [
+        "Asesoría en componentes",
+        "Ensamblaje profesional",
+        "Instalación de SO",
+        "Configuración inicial",
+        "Garantía extendida",
+        "Soporte técnico"
+      ]
+    },
+    {
+      "name": "Punto de Venta (POS)",
+      "description": "Sistema de punto de venta integrado con inventario y reportes en tiempo real.",
+      "type": "rango",
+      "priceFrom": 5000,
+      "priceTo": 15000,
+      "badge": "En desarrollo",
+      "features": [
+        "Interfaz táctil",
+        "Gestión de inventario",
+        "Reportes en tiempo real",
+        "Múltiples formas de pago",
+        "Impresión de tickets",
+        "Sincronización en la nube"
+      ]
+    },
+    {
+      "name": "Sistema de Gestión de Invitados",
+      "description": "Plataforma para gestionar invitados, eventos y accesos de forma automatizada.",
+      "type": "fijo",
+      "price": 3000,
+      "badge": "En desarrollo",
+      "features": [
+        "Registro de invitados",
+        "Códigos QR",
+        "Notificaciones automáticas",
+        "Panel de control",
+        "Reportes de asistencia",
+        "Integración con calendarios"
+      ]
+    }
+  ]
+}
