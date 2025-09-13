@@ -1,7 +1,17 @@
 [
   {
-    "title": "Universidad Autonoma del Estado de Hidalgo",
-    "image": "/content-images/uaeh.avif",
-    "link": "https://www.uaeh.edu.mx/"
+    "title": "Academia de Danza Di Ballu",
+    "image": "/content-images/DiBallu.avif",
+    "link": "https://academiadiballu.netlify.app/"
+  },
+  {
+    "title": "Creando Patinadores MX",
+    "image": "/content-images/MX.avif",
+    "link": "https://creandopatinadores.vercel.app/"
+  },
+  {
+    "title": "Taqueria Los 2 Carnales",
+    "image": "/content-images/2CTLogo.avif",
+    "link": ""
   }
 ]

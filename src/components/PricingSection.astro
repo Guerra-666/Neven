@@ -6,10 +6,10 @@ import CubeOutline from '../assets/theme-images/icon-cube-outline.svg'
 
 const { title, pricing, individualServices } = Astro.props
 
-// Función para formatear precio como moneda
-const formatPrice = (price) => {
-  return new Intl.NumberFormat('es-MX').format(price)
-}
+// Función para formatear precio como moneda (comentada temporalmente)
+// const formatPrice = (price) => {
+//   return new Intl.NumberFormat('es-MX').format(price)
+// }
 
 // Función para procesar servicios y extraer notas
 const processServices = (services) => {
@@ -23,14 +23,15 @@ const processServices = (services) => {
     if (match) {
       const [, beforeParen, insideParen, afterParen] = match
       const noteIndex = notes.length + 1
+      const asterisks = '*'.repeat(noteIndex)
       
       processedServices.push({
         text: (beforeParen + afterParen).trim(),
-        noteRef: `*${noteIndex}`
+        noteRef: asterisks
       })
       
       notes.push({
-        index: noteIndex,
+        asterisks: asterisks,
         text: insideParen
       })
     } else {
@@ -51,12 +52,14 @@ const processServices = (services) => {
   <!-- Header -->
   { title && <h2 class="bs-h2 text-center">{ title }</h2>}
 
-  <!-- Servicios individuales - Precios desde -->
+  <!-- Servicios individuales - Sin precios temporalmente -->
   { individualServices && individualServices.length > 0 && (
   <div class="mt-8 mb-12">
     <div class="text-center mb-10">
       <h3 class="text-3xl font-bold mb-3">Servicios individuales</h3>
+      {/* Precio temporalmente oculto
       <p class="text-xl text-opacity-70">Precios desde $3,000 MXN</p>
+      */}
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -75,6 +78,7 @@ const processServices = (services) => {
             <p class="text-sm text-opacity-60 mb-4 leading-relaxed">{service.description}</p>
           )}
           
+          {/* Precios temporalmente ocultos
           <div class="text-right">
             { service.type === "fijo" && (
               <span class="text-2xl font-bold">${formatPrice(service.price)}</span>
@@ -89,6 +93,7 @@ const processServices = (services) => {
               </div>
             )}
           </div>
+          */}
         </div>
       ))}
     </div>
@@ -184,7 +189,7 @@ const processServices = (services) => {
                   <div class="space-y-2">
                     { notes.map((note) => (
                       <p class="text-sm text-opacity-70 leading-relaxed">
-                        <span class="font-medium">*{note.index}</span> {note.text}
+                        <span class="font-medium">{note.asterisks}</span> {note.text}
                       </p>
                     ))}
                   </div>
@@ -193,13 +198,15 @@ const processServices = (services) => {
             </div>
 
             <!-- CTA -->
-            <footer class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mt-8 pt-6 border-t border-current/20">
+            <footer class="flex flex-col justify-center items-center gap-6 mt-8 pt-6 border-t border-current/20">
 
+              {/* Precio temporalmente oculto
               <!-- Price -->
               <div class="flex flex-col">
                 <span class="text-4xl lg:text-5xl font-bold">${ formatPrice(item.price) }</span>
                 <span class="text-lg text-opacity-70">por mes</span>
               </div>
+              */}
 
               <!-- CTA button -->
               <button type="button" class="bs-btn inline-block text-lg px-8 py-4 whitespace-nowrap" onclick="demo.showModal()">

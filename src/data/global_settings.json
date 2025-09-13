@@ -73,25 +73,10 @@
     }
   ],
   "social_links": [
-    {
-      "title": "LinkedIn",
-      "link": "https://www.linkedin.com/company/neven-pachuca"
-    },
+   
     {
       "title": "WhatsApp Business",
       "link": "https://wa.me/7711650216?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios%20de%20consultoria%20tecnologica"
-    },
-    {
-      "title": "Facebook",
-      "link": "https://www.facebook.com/nevenpachuca"
-    },
-    {
-      "title": "YouTube",
-      "link": "https://www.youtube.com/@neventech"
-    },
-    {
-      "title": "Instagram",
-      "link": "https://www.instagram.com/nevenpachuca"
     }
   ],
   "business_hours": {

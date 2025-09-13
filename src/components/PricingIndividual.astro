@@ -21,10 +21,11 @@ const processDescription = (description) => {
     matches.forEach((match, index) => {
       const noteIndex = notes.length + 1
       const noteText = match.slice(1, -1) // Remover paréntesis
+      const asterisks = '*'.repeat(noteIndex)
       
-      processedText = processedText.replace(match, `*${noteIndex}`)
+      processedText = processedText.replace(match, asterisks)
       notes.push({
-        index: noteIndex,
+        asterisks: asterisks,
         text: noteText
       })
     })
@@ -84,7 +85,7 @@ const processDescription = (description) => {
                   <div class="mt-3 pt-3 border-t border-current/10">
                     { notes.map((note) => (
                       <p class="text-sm text-opacity-60 leading-relaxed">
-                        <span class="font-medium">*{note.index}</span> {note.text}
+                        <span class="font-medium">{note.asterisks}</span> {note.text}
                       </p>
                     ))}
                   </div>
@@ -94,7 +95,7 @@ const processDescription = (description) => {
             
             <!-- Features -->
             { service.features && service.features.length > 0 && (
-              <div class="mb-6 flex-grow">
+              <div class="mb-1  flex-grow">
                 <ul class="space-y-2">
                   { service.features.map((feature) => (
                     <li class="text-sm text-opacity-80 flex items-start">
@@ -113,7 +114,7 @@ const processDescription = (description) => {
   
   <!-- Toggle Button -->
   { individualServices && individualServices.length > 3 && (
-    <div class="text-center">
+    <div class="text-center mt-2" id="toggle-container">
       <button type="button" id="toggle-services" class="bs-btn inline-block text-base px-6 py-3 whitespace-nowrap">
         <span class="inline-flex items-center">
           Ver todos los servicios
@@ -147,6 +148,16 @@ const processDescription = (description) => {
     margin-bottom: 1.5rem;
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: var(--delay, 0ms);
+  }
+  
+  .toggle-expanded {
+    margin-top: 1.5rem;
+    transition: margin-top 0.3s ease;
+  }
+  
+  .toggle-collapsed {
+    margin-top: 0.5rem;
+    transition: margin-top 0.3s ease;
   }
   
   .service-card-expanding {
@@ -191,11 +202,15 @@ const processDescription = (description) => {
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('toggle-services');
+    const toggleContainer = document.getElementById('toggle-container');
     const serviceCards = document.querySelectorAll('.service-card');
     const toggleIcon = toggleButton?.querySelector('svg');
     let isExpanded = false;
 
-    if (toggleButton) {
+    if (toggleButton && toggleContainer) {
+      // Set initial state
+      toggleContainer.classList.add('toggle-collapsed');
+      
       toggleButton.addEventListener('click', function() {
         isExpanded = !isExpanded;
         
@@ -210,6 +225,15 @@ const processDescription = (description) => {
             }
           }
         });
+        
+        // Update toggle container spacing
+        if (isExpanded) {
+          toggleContainer.classList.remove('toggle-collapsed');
+          toggleContainer.classList.add('toggle-expanded');
+        } else {
+          toggleContainer.classList.remove('toggle-expanded');
+          toggleContainer.classList.add('toggle-collapsed');
+        }
         
         // Update button text and icon
         const buttonText = toggleButton.querySelector('span');
